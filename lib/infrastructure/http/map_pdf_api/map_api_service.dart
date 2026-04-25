@@ -8,7 +8,7 @@ part 'map_api_service.g.dart';
 abstract class MapApiService {
   factory MapApiService(Dio dio, {String baseUrl}) = _MapApiService;
 
-  @GET('/m3_56/M3tuushin56map_web.pdf')
+  @GET('/m3_57/M3tuushin57map_web.pdf')
   @DioResponseType(ResponseType.bytes)
   Future<HttpResponse<List<int>>> downloadPdf();
 }

@@ -1,6 +1,16 @@
+include: package:pedantic_mono/analysis_options.yaml
 analyzer:
   errors:
-    invalid_annotation_target: ignore
     lines_longer_than_80_chars: ignore
     slash_for_doc_comments: ignore
-include: package:pedantic_mono/analysis_options.yaml
+    flutter_style_todos: ignore
+    invalid_annotation_target: ignore
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "widgetbook/**"
+
+linter:
+  rules:
+    prefer_relative_imports: true # 相対パスインポート
+    unnecessary_await_in_return: false # returnでの不必要なawaitを許可

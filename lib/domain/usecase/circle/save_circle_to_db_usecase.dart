@@ -1,4 +1,4 @@
-import 'package:m3_app/core/utils/result.dart';
+import '../../../core/utils/result.dart';
 
 import '../../../infrastructure/repository/circle_repository.dart';
 

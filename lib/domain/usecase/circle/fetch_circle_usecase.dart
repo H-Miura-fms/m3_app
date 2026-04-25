@@ -1,7 +1,6 @@
-import 'package:m3_app/domain/model/circle_model.dart';
-
 import '../../../core/utils/result.dart';
 import '../../../infrastructure/repository/circle_repository.dart';
+import '../../model/circle_model.dart';
 
 /**
  * DBからサークル情報を取得

@@ -1,6 +1,7 @@
 import 'package:dio/dio.dart';
-import 'package:m3_app/infrastructure/model/circle_api_response/circle_api_response_model.dart';
 import 'package:retrofit/retrofit.dart';
+
+import '../../model/circle_api_response/circle_api_response_model.dart';
 
 part 'circle_api_service.g.dart';
 

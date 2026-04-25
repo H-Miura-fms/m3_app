@@ -3,20 +3,20 @@ import 'package:flutter/services.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:m3_app/core/router/routing_path_const.dart';
-import 'package:m3_app/core/theme/m3_theme_config.dart';
-import 'package:m3_app/domain/model/circle_model.dart';
-import 'package:m3_app/domain/model/circle_wish_model.dart';
-import 'package:m3_app/presentation/view/components/common/error_page.dart';
-import 'package:m3_app/presentation/view/components/common/loading_page.dart';
-import 'package:m3_app/presentation/view/components/common/margin.dart';
-import 'package:m3_app/presentation/view/components/common/toast.dart';
-import 'package:m3_app/provider/usecase/usecase_providers.dart';
 
+import '../../../../core/router/routing_path_const.dart';
 import '../../../../core/theme/m3_theme.dart';
+import '../../../../core/theme/m3_theme_config.dart';
 import '../../../../core/utils/result.dart';
+import '../../../../domain/model/circle_model.dart';
+import '../../../../domain/model/circle_wish_model.dart';
+import '../../../../provider/usecase/usecase_providers.dart';
 import '../../../../provider/wish_list_page/budget_state.dart';
 import '../../../controller/wish_list/wish_list_controller.dart';
+import '../../components/common/error_page.dart';
+import '../../components/common/loading_page.dart';
+import '../../components/common/margin.dart';
+import '../../components/common/toast.dart';
 
 class WishListPage extends ConsumerWidget {
   const WishListPage({super.key});

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:m3_app/core/theme/m3_theme.dart';
-import 'package:m3_app/core/theme/m3_theme_config.dart';
+
+import '../../../../core/theme/m3_theme.dart';
+import '../../../../core/theme/m3_theme_config.dart';
 
 // ignore: avoid_classes_with_only_static_members
 class MessageWidget {

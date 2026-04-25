@@ -1,3 +1,4 @@
+import 'package:flutter_test/flutter_test.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:m3_app/core/utils/result.dart';
 import 'package:m3_app/domain/model/circle_model.dart';
@@ -7,7 +8,6 @@ import 'package:m3_app/infrastructure/repository/provider/repository_providers.d
 import 'package:m3_app/provider/usecase/usecase_providers.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
-import 'package:test/test.dart';
 
 import 'circle_usecase_test.mocks.dart';
 

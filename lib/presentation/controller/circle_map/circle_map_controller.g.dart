@@ -7,7 +7,7 @@ part of 'circle_map_controller.dart';
 // **************************************************************************
 
 String _$circleMapControllerHash() =>
-    r'7741d8d2930ee86a5bd139e73656097ba870ccff';
+    r'bcd361da41d92d8e7a0144f2d34c3194bcc04003';
 
 /// See also [CircleMapController].
 @ProviderFor(CircleMapController)

@@ -1,7 +1,6 @@
-import 'package:m3_app/domain/model/circle_wish_model.dart';
-
 import '../../../core/utils/result.dart';
 import '../../../infrastructure/repository/wish_list_repository.dart';
+import '../../model/circle_wish_model.dart';
 
 /**
  * ウィッシュリストを取得

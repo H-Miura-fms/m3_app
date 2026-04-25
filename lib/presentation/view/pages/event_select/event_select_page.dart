@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:m3_app/core/router/routing_path_const.dart';
-import 'package:m3_app/presentation/view/components/event_select/event_card.dart';
-import 'package:m3_app/provider/common/shared_preference_provider.dart';
+
+import '../../../../core/router/routing_path_const.dart';
+import '../../../../provider/common/shared_preference_provider.dart';
+import '../../components/event_select/event_card.dart';
 
 class EventSelectPage extends ConsumerWidget {
   const EventSelectPage({super.key});

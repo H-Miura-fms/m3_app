@@ -1,6 +1,5 @@
-import 'package:m3_app/infrastructure/local/dao/circle_fav_dao.dart';
-
 import '../../domain/model/circle_wish_model.dart';
+import '../local/dao/circle_fav_dao.dart';
 
 class WishListRepository {
   const WishListRepository(this._dao);

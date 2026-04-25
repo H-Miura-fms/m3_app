@@ -1,24 +1,25 @@
-import 'package:m3_app/provider/common/shared_preference_provider.dart';
-import 'package:m3_app/provider/usecase/usecase_providers.dart';
+import 'dart:developer' as developer;
+
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 import '../../../core/utils/result.dart';
+import '../../../provider/common/shared_preference_provider.dart';
+import '../../../provider/usecase/usecase_providers.dart';
 
 part 'circle_db_controller.g.dart';
 
 @riverpod
 class CircleDBController extends _$CircleDBController {
   @override
-  FutureOr<void> build() async {
+  Future<void> build() async {
     state = const AsyncValue<void>.loading();
     final isLocalAvailable = isLocalDataAvailable();
     state = isLocalAvailable
-        ? const AsyncValue.data(null)
+        ? const AsyncValue<void>.data(null)
         : const AsyncValue<void>.loading();
     if (!isLocalAvailable) {
       await _saveLocal();
     }
-    return;
   }
 
   bool isLocalDataAvailable() {
@@ -31,8 +32,6 @@ class CircleDBController extends _$CircleDBController {
 
     state = const AsyncValue<void>.loading();
 
-    // await Future<void>.delayed(const Duration(seconds: 10));
-
     final result = await useCase.call();
 
     switch (result) {
@@ -40,8 +39,8 @@ class CircleDBController extends _$CircleDBController {
         await ref
             .read(sharedPreferencesProvider)
             .setBool('isLocalAvailable', true);
-        print('fetch circle list success');
-        state = const AsyncValue.data(true);
+        developer.log('fetch circle list success');
+        state = const AsyncValue<void>.data(null);
       case Failure<void, Exception>():
         throw result.exception;
     }

@@ -2,10 +2,10 @@ import 'dart:io';
 
 import 'package:drift/drift.dart';
 import 'package:drift/native.dart';
-import 'package:m3_app/domain/model/circle_model.dart';
 import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
 
+import '../../../domain/model/circle_model.dart';
 import '../../../domain/model/circle_wish_model.dart';
 
 part 'circle_database.g.dart';

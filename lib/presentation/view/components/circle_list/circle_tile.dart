@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:m3_app/core/theme/m3_theme.dart';
-import 'package:m3_app/core/theme/m3_theme_config.dart';
-import 'package:m3_app/domain/model/circle_model.dart';
-import 'package:m3_app/presentation/view/components/common/margin.dart';
 
+import '../../../../core/theme/m3_theme.dart';
+import '../../../../core/theme/m3_theme_config.dart';
 import '../../../../core/utils/circle_util.dart';
+import '../../../../domain/model/circle_model.dart';
+import '../common/margin.dart';
 
 class CircleTile extends StatelessWidget {
   const CircleTile({super.key, required this.circle, required this.onTap});

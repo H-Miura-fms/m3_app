@@ -1,8 +1,9 @@
-import 'package:m3_app/core/constant/circle_event_name_const.dart';
-import 'package:m3_app/domain/model/circle_model.dart';
-import 'package:m3_app/infrastructure/http/circle_api/circle_api_service.dart';
-import 'package:m3_app/infrastructure/local/dao/circle_dao.dart';
+import 'dart:developer' as developer;
 
+import '../../core/constant/circle_event_name_const.dart';
+import '../../domain/model/circle_model.dart';
+import '../http/circle_api/circle_api_service.dart';
+import '../local/dao/circle_dao.dart';
 import '../model/circle_api_response/circle_api_response_model.dart';
 
 class CircleRepository {
@@ -61,7 +62,11 @@ class CircleRepository {
 
       return response;
     } on Exception catch (e, st) {
-      print('Error fetching circle info from API: $e \n $st');
+      developer.log(
+        'Error fetching circle info from API',
+        error: e,
+        stackTrace: st,
+      );
       rethrow;
     }
   }

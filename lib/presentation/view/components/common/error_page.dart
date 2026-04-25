@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:m3_app/presentation/view/components/common/margin.dart';
+
+import 'margin.dart';
 
 class ErrorPage extends StatelessWidget {
   const ErrorPage({super.key, required this.retryMethod});

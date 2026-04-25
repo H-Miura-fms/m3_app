@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:m3_app/core/theme/m3_theme.dart';
-import 'package:m3_app/core/theme/m3_theme_config.dart';
-import 'package:m3_app/core/utils/circle_util.dart';
-import 'package:m3_app/presentation/view/components/circle_list/favorite_button.dart';
-import 'package:m3_app/presentation/view/components/common/margin.dart';
-import 'package:m3_app/presentation/view/components/common/toast.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../../../core/theme/m3_theme.dart';
+import '../../../../core/theme/m3_theme_config.dart';
+import '../../../../core/utils/circle_util.dart';
 import '../../../../domain/model/circle_model.dart';
 import '../../../controller/circle_list/circle_list_controller.dart';
+import '../../components/circle_list/favorite_button.dart';
+import '../../components/common/margin.dart';
+import '../../components/common/toast.dart';
 
 class CircleDetailPage extends StatelessWidget {
   const CircleDetailPage({super.key, required this.circle});

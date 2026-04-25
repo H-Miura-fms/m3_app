@@ -1,5 +1,6 @@
 import 'package:drift/drift.dart';
-import 'package:m3_app/infrastructure/local/db/circle_database.dart';
+
+import '../db/circle_database.dart';
 
 class CircleDbService {
   CircleDbService(this.db);

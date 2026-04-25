@@ -1,14 +1,14 @@
-import 'package:m3_app/provider/usecase/usecase_providers.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 import '../../../core/utils/result.dart';
+import '../../../provider/usecase/usecase_providers.dart';
 
 part 'circle_map_controller.g.dart';
 
 @riverpod
 class CircleMapController extends _$CircleMapController {
   @override
-  FutureOr<String> build() async {
+  FutureOr<String> build() {
     state = const AsyncValue.loading();
 
     return _fetch();

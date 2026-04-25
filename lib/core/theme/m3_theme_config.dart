@@ -2,7 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:m3_app/core/theme/m3_theme.dart';
+
+import 'm3_theme.dart';
 
 class FontSize {
   double get small => 10;

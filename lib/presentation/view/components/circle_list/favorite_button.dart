@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:m3_app/core/theme/m3_theme.dart';
-import 'package:m3_app/core/theme/m3_theme_config.dart';
+
+import '../../../../core/theme/m3_theme.dart';
+import '../../../../core/theme/m3_theme_config.dart';
 
 class FavoriteButton extends StatelessWidget {
   const FavoriteButton({

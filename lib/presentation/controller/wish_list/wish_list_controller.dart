@@ -1,8 +1,8 @@
-import 'package:m3_app/domain/model/circle_wish_model.dart';
-import 'package:m3_app/provider/usecase/usecase_providers.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 import '../../../core/utils/result.dart';
+import '../../../domain/model/circle_wish_model.dart';
+import '../../../provider/usecase/usecase_providers.dart';
 
 part 'wish_list_controller.g.dart';
 
@@ -11,7 +11,7 @@ class WishListController extends _$WishListController {
   WishListController();
 
   @override
-  FutureOr<List<CircleWishModel>> build() async {
+  FutureOr<List<CircleWishModel>> build() {
     state = const AsyncValue.loading();
     return _fetchWishList();
   }

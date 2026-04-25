@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_pdfview/flutter_pdfview.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:m3_app/presentation/controller/circle_map/circle_map_controller.dart';
-import 'package:m3_app/presentation/view/components/common/error_page.dart';
-import 'package:m3_app/presentation/view/components/common/loading_page.dart';
+
+import '../../../controller/circle_map/circle_map_controller.dart';
+import '../../components/common/error_page.dart';
+import '../../components/common/loading_page.dart';
 
 class CircleMapPage extends ConsumerWidget {
   const CircleMapPage({super.key});

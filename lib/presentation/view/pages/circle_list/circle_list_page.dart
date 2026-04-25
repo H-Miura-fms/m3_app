@@ -23,7 +23,7 @@ class CircleListPage extends HookConsumerWidget {
     return Scaffold(
       appBar: AppBar(
         // TODO イベント名
-        title: const Text('M3-2025春'),
+        title: const Text('M3-2026春'),
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10),
@@ -45,9 +45,7 @@ class CircleListPage extends HookConsumerWidget {
                     (context, index) {
                       final circle = data[index];
                       final a = circle.name;
-                      final test = testModel(name: 'test', age: '20');
 
-                      test.name = 'test2';
                       return CircleTile(
                         circle: circle,
                         onTap: () {
@@ -82,10 +80,4 @@ class CircleListPage extends HookConsumerWidget {
       ),
     );
   }
-}
-
-class testModel {
-  testModel({required this.name, required this.age});
-  String name;
-  String age;
 }

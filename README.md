@@ -4,12 +4,12 @@
 
 ## 更新
 
-(2025/10/26)
-2025 秋に一時的に対応
+(2026/4/26)
+2026春に一時的に対応
 
-2025春版はアンインストールしてください。
+2025秋版はアンインストールしてください。
 
-[androidAPK](https://drive.google.com/drive/folders/1yLqPOpCbROfYeZSzF7jMl8pq716PPKSq?usp=sharing)
+[androidAPK](https://drive.google.com/drive/folders/1WXvfFeG9PM1Fcd4qMxm_fygnaX4F5bSK?usp=sharing)
 
 *iosのビルドファイルの配布はできません。
 
